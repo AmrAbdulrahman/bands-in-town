@@ -18,5 +18,8 @@ export default theme => ({
   },
   navLink: {
     marginLeft: theme.spacing.unit,
+  },
+  navLinkIcon: {
+    marginRight: theme.spacing.unit / 2,
   }
 });

@@ -35,12 +35,12 @@ export class HeaderBase extends Component {
             </Typography>
 
             <NavLink to='/search' className={classes.navLink}>
-              <SearchIcon />
+              <SearchIcon className={classes.navLinkIcon} />
               {Strings.search}
             </NavLink>
 
             <NavLink to='/coming-soon' className={classes.navLink}>
-              <DateRangeIcon />
+              <DateRangeIcon className={classes.navLinkIcon} />
               {Strings.comingSoon}
             </NavLink>
           </Toolbar>

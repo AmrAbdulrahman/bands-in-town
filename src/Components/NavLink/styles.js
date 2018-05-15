@@ -3,7 +3,7 @@ export default theme => ({
     textDecoration: 'none',
     color: 'inherit',
     fontFamily: theme.typography.fontFamily,
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
     padding: `${theme.spacing.unit / 2}px ${theme.spacing.unit}px`,
   },

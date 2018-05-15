@@ -5,6 +5,8 @@ const Strings = new LocalizedStrings({
     navHeadline: 'Bands In Town',
     search: 'Search',
     comingSoon: 'Coming Soon',
+    homePlaceholderMessage: `There's nothing to see here, keep moving...`,
+    seeComingSoonEvents: 'See coming soon events',
   },
 });
 

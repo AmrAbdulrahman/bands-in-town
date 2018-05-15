@@ -1,3 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default () => (<span>Home</span>);
+import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import NavLink from '../../Components/NavLink';
+import Strings from '../../Services/Strings';
+
+import styles from './styles';
+
+class Home extends Component {
+  render() {
+    const { classes } = this.props;
+
+    return (
+      <Typography>
+        {Strings.homePlaceholderMessage}
+
+        <NavLink to='/coming-soon' className={classes.link}>
+          {Strings.seeComingSoonEvents}
+        </NavLink>
+      </Typography>
+    );
+  }
+}
+
+export default withStyles(styles)(Home);
