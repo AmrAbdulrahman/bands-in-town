@@ -25,5 +25,6 @@ export default {
   },
   zIndex: {
     loadingBar: 1600,
+    loadingOverlay: 1500,
   }
 };

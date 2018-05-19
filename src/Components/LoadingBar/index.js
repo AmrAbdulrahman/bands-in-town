@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
-class Loading extends Component {
+class LoadingBarBase extends Component {
   render() {
     const { classes } = this.props;
 
@@ -21,8 +21,8 @@ class Loading extends Component {
   }
 }
 
-Loading.propTypes = {
+LoadingBarBase.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(styles)(Loading);
+export default withStyles(styles)(LoadingBarBase);
