@@ -33,7 +33,7 @@ export default (rootReducer, rootSaga) => {
 
   const store = createStore(rootReducer, compose(...enhancers));
 
-  if (process.env.NODE_ENV === 'development') {
+  if (sagaMiddleware) {
     // we have to start root saga after mounting the Saga middleware on the Store
     sagaMiddleware.run(rootSaga);
   }
