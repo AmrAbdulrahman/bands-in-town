@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Event from '../../Components/Event';
 import Artist from '../../Components/Artist';
+import LoadingOverlay from '../../Components/LoadingOverlay';
 
 import Strings from '../../Services/Strings';
 import styles from './styles';
@@ -41,6 +42,7 @@ class EventsResults extends Component {
 
     return (
       <Grid container spacing={16}>
+        <LoadingOverlay active={events.loading} />
         <Grid item xs={12} sm={6} md={4}>
           <div className={classes.artistWrapper}>
             <Artist name={events.results.name} />
