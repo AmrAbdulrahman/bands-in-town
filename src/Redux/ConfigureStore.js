@@ -10,10 +10,15 @@ export const history = createHistory();
 // creates the store
 export default (rootReducer, rootSaga) => {
   const enhancers = [];
-  let sagaMiddleware;
+
+  const middlewares = [];
+  const sagaMonitor = Reactotron.createSagaMonitor();
+  const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
+
+  middlewares.push(sagaMiddleware);
+  middlewares.push(routerMiddleware(history));
 
   if (process.env.NODE_ENV === 'development') {
-    const middlewares = [];
     const logger = createLogger({
       diff: true,
       diffPredicate: true,
@@ -21,22 +26,14 @@ export default (rootReducer, rootSaga) => {
       duration: true
     });
 
-    const sagaMonitor = Reactotron.createSagaMonitor();
-    sagaMiddleware = createSagaMiddleware({ sagaMonitor });
-
-    middlewares.push(sagaMiddleware);
-    middlewares.push(routerMiddleware(history));
     middlewares.push(logger);
-
-    enhancers.push(applyMiddleware(...middlewares));
   }
+
+  enhancers.push(applyMiddleware(...middlewares));
 
   const store = createStore(rootReducer, compose(...enhancers));
 
-  if (sagaMiddleware) {
-    // we have to start root saga after mounting the Saga middleware on the Store
-    sagaMiddleware.run(rootSaga);
-  }
+  sagaMiddleware.run(rootSaga);
 
   return store;
 };

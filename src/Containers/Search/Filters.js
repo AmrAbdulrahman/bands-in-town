@@ -46,14 +46,6 @@ class EventsFilters extends Component {
 
   // merges 'updates' with existing 'query-params'
   set queryParams(updates) {
-    console.log({
-      ...this.queryParams,
-      ...updates,
-    }, queryString.stringify({
-      ...this.queryParams,
-      ...updates,
-    }));
-
     this.props.history.push({
       search: queryString.stringify({
         ...this.queryParams,
