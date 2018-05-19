@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import moment from 'moment';
 
 import { withRouter } from 'react-router';
-import queryString from 'query-string';
+import queryString from 'qs';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -34,12 +34,26 @@ class EventsFilters extends Component {
 
   get queryParams() {
     const { location } = this.props;
+    let search = location.search;
 
-    return queryString.parse(location.search);
+    // remove '?' at the beginning
+    if (search.startsWith('?')) {
+      search = search.substr(1);
+    }
+
+    return queryString.parse(search);
   }
 
   // merges 'updates' with existing 'query-params'
   set queryParams(updates) {
+    console.log({
+      ...this.queryParams,
+      ...updates,
+    }, queryString.stringify({
+      ...this.queryParams,
+      ...updates,
+    }));
+
     this.props.history.push({
       search: queryString.stringify({
         ...this.queryParams,
