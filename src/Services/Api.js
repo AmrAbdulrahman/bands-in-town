@@ -6,21 +6,21 @@ import SnackbarActions from '../Redux/Snackbar';
 
 const { baseURL, appId } = envConfig.api;
 
-const BrandsInTown = apisauce.create({
+const BandsInTown = apisauce.create({
   headers: { Accept: 'application/json' },
   timeout: 30000, // ms
   baseURL,
 });
 
 // globally dispatch LoadingBar
-BrandsInTown.addRequestTransform(request => {
+BandsInTown.addRequestTransform(request => {
   store.dispatch(showLoading());
 
   // statically inject app_id for all requests
   request.params.app_id = appId;
 });
 
-BrandsInTown.addResponseTransform(response => {
+BandsInTown.addResponseTransform(response => {
   store.dispatch(hideLoading());
 
   // show global error
@@ -30,6 +30,6 @@ BrandsInTown.addResponseTransform(response => {
 });
 
 export default class Api {
-  static getArtist = name => BrandsInTown.get(`/artists/${name}`);
-  static getArtistEvents = (name, query) => BrandsInTown.get(`/artists/${name}/events`, query);
+  static getArtist = name => BandsInTown.get(`/artists/${name}`);
+  static getArtistEvents = (name, query) => BandsInTown.get(`/artists/${name}/events`, query);
 };

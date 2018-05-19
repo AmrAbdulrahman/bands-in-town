@@ -57,7 +57,7 @@ export class ArtistBase extends Component {
           <CardActions>
             { this.artist.url && (
               <Button id="url" size="small" color="primary" href={this.artist.url} target="blank_">
-                {Strings.brandsInTown}
+                {Strings.bandsInTown}
               </Button>
             )}
 

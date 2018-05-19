@@ -3,21 +3,21 @@ const env = process.env.NODE_ENV;
 const envConfig = ({
   test: {
     api: {
-      appId: 'brands_in_town',
+      appId: 'bands_in_town',
       baseURL: 'https://rest.bandsintown.com',
     },
     googleMapKey: 'AIzaSyAiWUn_8yzwpEo8Dk0OI5sbV2Ys67tIHp8',
   },
   development: {
     api: {
-      appId: 'brands_in_town',
+      appId: 'bands_in_town',
       baseURL: 'https://rest.bandsintown.com',
     },
     googleMapKey: 'AIzaSyAiWUn_8yzwpEo8Dk0OI5sbV2Ys67tIHp8',
   },
   production: {
     api: {
-      appId: 'BrandsInTown',
+      appId: 'bands_in_town',
       baseURL: 'https://rest.bandsintown.com',
     },
     googleMapKey: 'AIzaSyAiWUn_8yzwpEo8Dk0OI5sbV2Ys67tIHp8',
