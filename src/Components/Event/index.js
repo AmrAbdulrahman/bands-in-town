@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import classnames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import EventsActions from '../../Redux/Events';
 import Strings from '../../Services/Strings';
-import styles from './styles';
 
 import EventDate from './EventDate';
 import EventTime from './EventTime';
@@ -18,10 +15,10 @@ import EventVenu from './EventVenu';
 
 export class EventBase extends Component {
   render() {
-    const { classes, className, event } = this.props;
+    const { className, event } = this.props;
 
     return (
-      <Card className={classnames(classes.card, className)}>
+      <Card className={className}>
         <CardContent>
           <EventDate date={event.datetime} />
           <EventTime time={event.datetime} />
@@ -44,7 +41,6 @@ export class EventBase extends Component {
 }
 
 EventBase.propTypes = {
-  classes: PropTypes.object,
   className: PropTypes.string,
   event: PropTypes.shape({
     datetime: PropTypes.string.isRequired,
@@ -59,6 +55,4 @@ const mapDispatchToProps = dispatch => ({
   openEventLocation: id => dispatch(EventsActions.openEventLocation(id)),
 });
 
-export default connect(null, mapDispatchToProps)(
-  withStyles(styles)(EventBase)
-);
+export default connect(null, mapDispatchToProps)(EventBase);

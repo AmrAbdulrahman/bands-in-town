@@ -22,7 +22,7 @@ export default theme => ({
   },
   events: {
     marginTop: theme.spacing.unit,
-    height: 'calc(100vh - 225px)',
+    height: 'calc(100vh - 170px)',
     minHeight: 465,
     overflowY: 'auto',
   },

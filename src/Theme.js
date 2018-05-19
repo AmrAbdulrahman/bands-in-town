@@ -4,6 +4,7 @@ export default {
     common: {
       red: '#d44a4a',
       orange: '#ff9300',
+      yellow: '#efca37',
     },
     primary: {
       50: '#3ab7b2',

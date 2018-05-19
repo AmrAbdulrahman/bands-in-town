@@ -1,10 +1,6 @@
 export default theme => ({
-  card: {
-    // marginTop: theme.spacing.unit * 2,
-  },
   modalContent: {
     position: 'absolute',
-    width: theme.spacing.unit * 70,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
@@ -13,5 +9,9 @@ export default theme => ({
     transform: 'translateX(-50%)',
     maxHeight: 'calc(100vh - 150px)',
     overflowY: 'scroll',
+    width: '70%',
+    [theme.breakpoints.up('md')]: {
+      width: '50%',
+    },
   },
 });
