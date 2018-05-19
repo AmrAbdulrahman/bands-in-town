@@ -15,8 +15,8 @@ class Home extends Component {
       <Typography>
         {Strings.homePlaceholderMessage}
 
-        <NavLink to='/coming-soon' className={classes.link}>
-          {Strings.seeComingSoonEvents}
+        <NavLink to='/search' className={classes.link}>
+          {Strings.searchEvents}
         </NavLink>
       </Typography>
     );

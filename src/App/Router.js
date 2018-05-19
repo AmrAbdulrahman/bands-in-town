@@ -7,7 +7,6 @@ import { history } from '../Redux/ConfigureStore';
 import AppLayout from '../Containers/Layout';
 import Home from '../Containers/Home';
 import Search from '../Containers/Search';
-import ComingSoon from '../Containers/ComingSoon';
 
 class AppRouter extends Component {
   render() {
@@ -17,7 +16,6 @@ class AppRouter extends Component {
           <Switch>
             <Route exact path='/' component={ Home } />
             <Route exact path='/search' component={ Search } />
-            <Route exact path='/coming-soon' component={ ComingSoon } />
             <Redirect to='/' />
           </Switch>
         </AppLayout>

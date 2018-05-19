@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import classnames from 'classnames';
 
-import { withRouter } from 'react-router';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 

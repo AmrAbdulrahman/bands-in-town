@@ -1,8 +1,8 @@
 export default theme => ({
   root: {
-    zIndex: 2001,
-    backgroundColor: theme.palette.common.green,
-    height: 5,
-    position: 'fixed'
+    position: 'fixed',
+    zIndex: theme.zIndex.loadingBar,
+    backgroundColor: theme.palette.common.red,
+    height: 3,
   },
 });

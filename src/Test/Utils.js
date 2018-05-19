@@ -35,3 +35,6 @@ export function shallowUntilTarget(componentInstance, TargetComponent, {
     instance: ${componentInstance}; gave up after ${maxTries} tries`
   );
 }
+
+export const connect = str => `Connect(${str})`;
+export const withStyles = str => `WithStyles(${str})`;
