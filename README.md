@@ -1,11 +1,11 @@
 # Bands In Town
-A simple React application that connects to the [BandsInTown API](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information). users can then search events by *Artist Name*, and *Event Date*
+A [simple React application](https://bandsintown.herokuapp.com/) that connects to the [BandsInTown API](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information).<br>
+Users can
+- Search events by *Artist Name*
+- Filter events by *Event Date*
 
 ## Why?
 It's completely for-fun project, where I can show a sample React/Redux application of mine.
-
-project where, a I can show a sample react application.<br>
-[Here's the application up and running](https://bandsintown.herokuapp.com/).
 
 ## Libraries/Frameworks Used
 - React
