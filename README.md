@@ -7,6 +7,9 @@ Users can
 ## Why?
 It's completely for-fun project, where I can show a sample React/Redux application of mine.
 
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/AmrAbdulrahman/bands-in-town/master/screenshot/screenshot.png)
+
 ## Libraries/Frameworks Used
 - React
 - Redux/Redux-Sauce
