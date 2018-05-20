@@ -1,5 +1,10 @@
 # Bands In Town
-A simple React project where I can show a sample react application.<br>
+A simple React application that connects to the [BandsInTown API](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information). users can then search events by *Artist Name*, and *Event Date*
+
+## Why?
+It's completely for-fun project, where I can show a sample React/Redux application of mine.
+
+project where, a I can show a sample react application.<br>
 [Here's the application up and running](https://bandsintown.herokuapp.com/).
 
 ## Libraries/Frameworks Used
@@ -14,8 +19,8 @@ A simple React project where I can show a sample react application.<br>
 - [react-scripts](https://github.com/facebook/create-react-app/blob/master/README.md#getting-started)
   - Encapsulates (with ability to eject and take full control):
     - Webpack, Babel, ESlint, ...
-  - We can smoothly build/deploy out react applications with almost no configurations
-  - We're not locked in, and we can [eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) any time to have full control over webpack and all other configurations.
+  - We can smoothly build/deploy our React applications with [zero configurations](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information)
+  - We're not locked in, and we can [eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) at any point of time to have full control over webpack/babel plugins/eslint/... and all other tools.
 
 ## UI
 - I've used [Material-UI](https://material-ui.com/) which's an awesome implementation of the Material Design for React
