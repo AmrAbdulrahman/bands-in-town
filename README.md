@@ -1,8 +1,8 @@
 # Bands In Town
 A [simple React application](https://bandsintown.herokuapp.com/) that connects to the [BandsInTown API](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information).<br>
-Users can
-- Search events by *Artist Name*
-- Filter events by *Event Date*
+- Where users can
+  - Search events by *Artist Name*
+  - Filter events by *Event Date*
 
 ## Why?
 It's completely for-fun project, where I can show a sample React/Redux application of mine.
@@ -25,7 +25,7 @@ It's completely for-fun project, where I can show a sample React/Redux applicati
 ## UI
 - I've used [Material-UI](https://material-ui.com/) which's an awesome implementation of the Material Design for React
 - I've used [JSS](http://cssinjs.org/?v=v9.8.1) for the styling
-- Layouts are based on [Flex-Grid](https://material-ui.com/layout/grid/#grid), the application is completely **responsive**.
+- Layouts/Components are based on [Flex-Grid](https://material-ui.com/layout/grid/#grid), the application is completely **responsive**.
 
 ## Testing
 **Important Note: To run tests you have to have watchman installed, please check [this issue](https://github.com/facebook/create-react-app/issues/871) for more details, to install watchman please follow [the installation guide](https://facebook.github.io/watchman/docs/install.html) on the official website**
