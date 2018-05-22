@@ -22,12 +22,12 @@ export class HeaderBase extends Component {
               color="inherit"
               className={classes.flex}
             >
-              <NavLink to="/" className={classes.homeLink} activeClassName={classes.homeLinkActive}>
+              <NavLink to="/home" className={classes.homeLink} activeClassName={classes.homeLinkActive}>
                 {Strings.navHeadline}
               </NavLink>
             </Typography>
 
-            <NavLink to="/search" className={classes.navLink}>
+            <NavLink to="/" className={classes.navLink}>
               <SearchIcon className={classes.navLinkIcon} />
               {Strings.search}
             </NavLink>

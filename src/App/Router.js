@@ -14,8 +14,8 @@ class AppRouter extends Component {
       <ConnectedRouter history={ history }>
         <AppLayout>
           <Switch>
-            <Route exact path='/' component={ Home } />
-            <Route exact path='/search' component={ Search } />
+            <Route exact path='/' component={ Search } />
+            <Route exact path='/home' component={ Home } />
             <Redirect to='/' />
           </Switch>
         </AppLayout>

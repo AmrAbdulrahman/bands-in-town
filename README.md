@@ -57,7 +57,7 @@ It's completely for-fun project, where I can show a sample React/Redux applicati
 
 ## Extra features than [required](https://github.com/AmrAbdulrahman/bands-in-town/blob/master/REQUIREMENTS.md)
 - I have deep linked the search filters into the query parameters so that you can have shareable links.
-  - That's an event for [John, on Friday, March 6th 2015](https://bandsintown.herokuapp.com/search?name=john&dateFrom=2015-03-06&dateTo=2015-03-07)
+  - That's an event for [John, on Friday, March 6th 2015](https://bandsintown.herokuapp.com/?name=john&dateFrom=2015-03-06&dateTo=2015-03-07)
 - I've also added a Location GoogleMap for events.
 
 ## File Structure
