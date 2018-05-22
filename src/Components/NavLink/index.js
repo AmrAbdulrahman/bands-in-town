@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import classnames from 'classnames';
@@ -36,6 +37,7 @@ const mapStateToProps = state => ({
   router: state.router,
 });
 
-export default connect(mapStateToProps)(
-  withStyles(styles)(EnhancedNavLink)
-);
+export default compose(
+  connect(mapStateToProps),
+  withStyles(styles)
+)(EnhancedNavLink);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -57,6 +58,7 @@ const mapDispatchToProps = dispatch => ({
   closeEvenLocation: id => dispatch(EventsActions.closeEventLocation(id)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  withStyles(styles)(EventVenuBase)
-);
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  withStyles(styles)
+)(EventVenuBase);

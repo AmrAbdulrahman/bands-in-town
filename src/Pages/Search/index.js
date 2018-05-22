@@ -7,10 +7,10 @@ import EventsActions from '../../Redux/Events';
 class Search extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <SearchFilters />
         <SearchResults />
-      </div>
+      </React.Fragment>
     );
   }
 

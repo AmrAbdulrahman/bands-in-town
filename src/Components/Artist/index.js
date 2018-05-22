@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
@@ -42,7 +43,7 @@ export class ArtistBase extends Component {
     const { classes, className } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         <Card className={classnames(classes.card, className)}>
           <CardMedia
             className={classes.media}
@@ -68,7 +69,7 @@ export class ArtistBase extends Component {
             )}
           </CardActions>
         </Card>
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -87,6 +88,7 @@ const mapDispatchToProps = dispatch => ({
   getArtist: name => dispatch(ArtistsActions.get(name)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  withStyles(styles)(ArtistBase)
-);
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  withStyles(styles),
+)(ArtistBase);
