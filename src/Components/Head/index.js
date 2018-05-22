@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LoadingBar from '../LoadingBar';
-import Snackbar from '../Snackbar';
+import LoadingBar from 'Components/LoadingBar';
+import Snackbar from 'Components/Snackbar';
 
 class Head extends Component {
   render() {

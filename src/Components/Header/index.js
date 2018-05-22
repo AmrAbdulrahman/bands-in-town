@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
 import SearchIcon from '@material-ui/icons/Search';
-import NavLink from '../NavLink';
-
-import Strings from '../../Services/Strings';
+import NavLink from 'Components/NavLink';
+import Strings from 'Services/Strings';
 import styles from './styles';
 
 export class HeaderBase extends Component {

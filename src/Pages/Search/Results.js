@@ -4,15 +4,13 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import isNull from 'lodash/isNull';
 import map from 'lodash/map';
-
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Event from '../../Components/Event';
-import Artist from '../../Components/Artist';
-import LoadingOverlay from '../../Components/LoadingOverlay';
-
-import Strings from '../../Services/Strings';
+import Event from 'Components/Event';
+import Artist from 'Components/Artist';
+import LoadingOverlay from 'Components/LoadingOverlay';
+import Strings from 'Services/Strings';
 import styles from './styles';
 
 class EventsResults extends Component {

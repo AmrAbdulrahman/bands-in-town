@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
@@ -10,7 +9,7 @@ class LoadingOverlay extends Component {
 
     return !active ? null : (
       <div className={classes.root}>
-        <img alt="loading" src={require('../../Img/loading-icon.svg') } />
+        <img alt="loading" src={require('Img/loading-icon.svg') } />
       </div>
     );
   }

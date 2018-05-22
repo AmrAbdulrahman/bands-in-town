@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { store } from 'App';
 import Search from '.';
-import { store } from '../../App';
 
 describe('<Search>', () => {
   it('renders without crashing', () => {

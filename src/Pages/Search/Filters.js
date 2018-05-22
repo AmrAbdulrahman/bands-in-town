@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import moment from 'moment';
-
 import { withRouter } from 'react-router';
 import queryString from 'qs';
 import { withStyles } from '@material-ui/core/styles';
@@ -10,9 +9,8 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Grid from '@material-ui/core/Grid';
-
+import Strings from 'Services/Strings';
 import EventsActions from '../../Redux/Events';
-import Strings from '../../Services/Strings';
 import styles from './styles';
 
 class EventsFilters extends Component {

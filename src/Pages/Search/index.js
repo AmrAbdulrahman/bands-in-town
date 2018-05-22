@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import SearchFilters from './Filters';
 import SearchResults from './Results';
 import EventsActions from '../../Redux/Events';

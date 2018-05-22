@@ -8,10 +8,10 @@ import JssProvider from 'react-jss/lib/JssProvider';
 import createGenerateClassName from '@material-ui/core/styles/createGenerateClassName';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-import Head from '../Components/Head';
-import AppRouter from './Router';
+import Head from 'Components/Head';
+import Theme from 'Theme';
 import createStore from '../Redux';
-import Theme from '../Theme';
+import AppRouter from './Router';
 
 import 'normalize.css';
 

@@ -3,10 +3,10 @@ import { mount } from 'enzyme';
 import Artist from '.';
 
 import Typography from '@material-ui/core/Typography';
-import Strings from '../../Services/Strings';
 
+import Strings from 'Services/Strings';
+import { store } from 'App';
 import ArtistsActions from '../../Redux/Artists';
-import { store } from '../../App';
 
 describe('<Artist>', () => {
   it('renders placeholder user while loading', () => {

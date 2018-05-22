@@ -4,9 +4,9 @@ import { ConnectedRouter } from 'react-router-redux';
 
 import { history } from '../Redux/ConfigureStore';
 
-import AppLayout from '../Containers/Layout';
-import Home from '../Containers/Home';
-import Search from '../Containers/Search';
+import AppLayout from 'Containers/Layout';
+import Home from 'Pages/Home';
+import Search from 'Pages/Search';
 
 class AppRouter extends Component {
   render() {

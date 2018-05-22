@@ -1,7 +1,7 @@
 import { put, call, select } from 'redux-saga/effects';
 import _get from 'lodash/get';
+import Api from 'Services/Api';
 import ArtistsActions from '../Redux/Artists';
-import Api from '../Services/Api';
 
 function * get({ name }) {
   const artist = yield select(state => state.artists.byName[name.toLowerCase()]);
@@ -13,8 +13,8 @@ function * get({ name }) {
 
   // set artist.loading so that any follow up requests
   // with the same name doesn't call API again
-  // we need this because we render multiple components
-  // that all dispatch getArtist in parallel
+  // we need this to handle the case when multiple components
+  // dispatch getArtist in parallel
   // so, we only lock it here for the first one to pass
   yield put(ArtistsActions.setLoading(name));
 

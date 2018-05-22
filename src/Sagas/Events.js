@@ -1,6 +1,6 @@
 import { put, call, select } from 'redux-saga/effects';
+import Api from 'Services/Api';
 import EventsActions from '../Redux/Events';
-import Api from '../Services/Api';
 
 // keep it here as it's not generic
 // move it later to /Utils if it's gonna be reused

@@ -1,15 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { shallowUntilTarget, connect, withStyles } from '../../Test/Utils';
-import Event, { EventBase } from '.';
-import EventVenu, { EventVenuBase } from './EventVenu';
-import EventDate from './EventDate';
-import EventTime from './EventTime';
 import Typography from '@material-ui/core/Typography';
 
+import Strings from 'Services/Strings';
+import { store } from 'App';
+import Event, { EventBase } from '.';
+import EventDate from './EventDate';
+import EventTime from './EventTime';
+import EventVenu, { EventVenuBase } from './EventVenu';
 import EventsActions from '../../Redux/Events';
-import Strings from '../../Services/Strings';
-import { store } from '../../App';
 
 const event = {
   id: '1',

@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import ArtistsActions from '../../Redux/Artists';
-import Strings from '../../Services/Strings';
+import Strings from 'Services/Strings';
 import styles from './styles';
 
 export class ArtistBase extends Component {

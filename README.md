@@ -22,7 +22,7 @@ It's completely for-fun project, where I can show a sample React/Redux applicati
 - [react-scripts](https://github.com/facebook/create-react-app/blob/master/README.md#getting-started)
   - Encapsulates (with ability to eject and take full control):
     - Webpack, Babel, ESlint, ...
-  - We can smoothly build/deploy our React applications with [zero configurations](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0#/artist_information)
+  - We can smoothly build/deploy our React applications with [zero configurations](https://github.com/facebook/create-react-app#philosophy)
   - We're not locked in, and we can [eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) at any point of time to have full control over webpack/babel plugins/eslint/... and all other tools.
 
 ## UI
@@ -40,7 +40,7 @@ It's completely for-fun project, where I can show a sample React/Redux applicati
   - [Event Component](https://github.com/AmrAbdulrahman/bands-in-town/blob/master/src/Components/Event/test.js)
 
 ## Deployment
-- I deploy the on Heroku
+- I deploy the application on [Heroku](https://www.heroku.com/)
   - I use buildpack [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 - The deployment is hooked up with Github and configured to automatically deploy every time the code is `push`ed to the `master`.
   - In a real application env, we should change the configuration to deploy from specific `stable` branch

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 import Snackbar from '@material-ui/core/Snackbar';
-import SnackbarActions from '../../Redux/Snackbar';
 import { withStyles } from '@material-ui/core/styles';
+import SnackbarActions from '../../Redux/Snackbar';
 import styles from './styles';
 
 class SnackbarBase extends Component {

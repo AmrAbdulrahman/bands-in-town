@@ -1,11 +1,9 @@
 import React from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-
 import { withStyles } from '@material-ui/core/styles';
+import Strings from 'Services/Strings';
+import { envConfig } from 'Services/Env';
 import styles from './styles';
-
-import Strings from '../../Services/Strings';
-import { envConfig } from '../../Services/Env';
 
 const GoogleMapBaseComponent = ({ location }) => (
   <GoogleMap

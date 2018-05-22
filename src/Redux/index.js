@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import { loadingBarReducer } from 'react-redux-loading-bar';
 import configureStore from './ConfigureStore';
-import rootSaga from '../Sagas/';
+import rootSaga from 'Sagas';
 
 import { reducer as eventsReducer } from './Events';
 import { reducer as artistsReducer } from './Artists';

@@ -1,7 +1,7 @@
 import apisauce from 'apisauce';
 import { showLoading, hideLoading } from 'react-redux-loading-bar';
-import { envConfig } from './Env';
-import { store } from '../App';
+import { store } from 'App';
+import { envConfig } from 'Services/Env';
 import SnackbarActions from '../Redux/Snackbar';
 
 const { baseURL, appId } = envConfig.api;

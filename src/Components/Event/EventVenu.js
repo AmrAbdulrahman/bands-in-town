@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Typography from '@material-ui/core/Typography';
-import Map from '../Map';
+import Map from 'Components/Map';
 import EventsActions from '../../Redux/Events';
 import styles from './styles';
 
